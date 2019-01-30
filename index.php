@@ -1,7 +1,5 @@
 <?php
 include_once 'autoload.php';
-
-
 $route = (isset($_GET['route']) && is_file('routes/'.$_GET['route'].'.php')) ? 'routes/'.$_GET['route'] : 'routes/index';
 $route_file = $route.'.php';
 ?>
